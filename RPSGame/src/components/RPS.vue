@@ -115,7 +115,8 @@ export default{
                 <button id="S" v-on:click="UserInput('S')"><img src="../assets/scissors.png" alt="handscissor"></button>
             </div>
             <h2>User Selected: {{ UserChoice }} <br> Computer Selected: {{ ComputerChoice }}</h2>
-            <h2>{{ Winner }} Wins!</h2>
+            <h2 v-if="Winner == 'User' || Winner == 'Computer'">{{ Winner }} Wins!</h2>
+            <h2 v-else>{{ Winner }}!</h2>
             <h3>User: {{ DisplayUserWins }} wins <br> Computer: {{ DisplayComputerWins }} wins</h3>
             <button id="resetbtn" v-on:click="ResetScore()">Reset Score</button>
         </div>
