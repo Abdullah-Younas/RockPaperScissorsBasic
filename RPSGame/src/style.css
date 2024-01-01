@@ -1,0 +1,83 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  overflow: hidden;
+}
+.firstLaunched{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  margin: 0;
+}
+.startContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.startContainer button{
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+}
+.startContainer button:hover{
+  background-color: gray;
+}
+.InGameContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+.InGame{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.InGameBtns button{
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  border-radius: 100%;
+  border: none;
+  transition: all 0.5s;
+}
+.InGameBtns button:hover{
+  background-color: gray;
+}
+#R img{
+  width: 45px;
+  position: absolute;
+  transform: translateY(-21px) translateX(-23px);
+}
+#P img{
+  width: 45px;
+  position: absolute;
+  transform: translateY(-21px) translateX(-18px);
+}
+#S img{
+  width: 45px;
+  position: absolute;
+  transform: translateY(-21px) translateX(-18px);
+}
+#resetbtn{
+  border-radius: 8px;
+  border: none;
+  width: 100px;
+  height: 30px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+#resetbtn:hover{
+  background-color: gray;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
